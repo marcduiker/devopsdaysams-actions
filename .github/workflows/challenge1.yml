@@ -1,0 +1,14 @@
+name: Challenge1
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: echo repo
+        run: |
+          echo https://github.com/$GITHUB_REPOSITORY
+
